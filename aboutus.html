@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        *{ 
+    background-position: center;
+    margin:10px;
+    padding:20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color:whitesmoke;
+    
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:150px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.nav-links ul li a{
+    color:whitesmoke;
+    text-decoration:none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background:goldenrod;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:whitesmoke;
+    position: absolute;
+    
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 55px;
+    color:pink;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 14px;
+    color:whitesmoke;
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:whitesmoke;
+    border:1px solid whitesmoke;
+    padding:12px 34px;
+    font-size: 13px;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border:1px solid pink;
+    background:purple;
+    transition:1s;
+}
+.course{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+.course h1{
+    font-size:36px;
+    font-weight:600;
+}
+.course p{
+    color:palevioletred;
+    font-size:14px;
+    font-weight: 300;
+    line-height:22px;
+    padding:10px;
+}
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content:space-between;
+}
+.course-col{
+    flex-basis:31%;
+    background:lightgrey;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    transition:0.5s;
+}
+
+
+
+
+.course-col h3{
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgb(0,0,0.2);
+}
+
+
+.align:hover{
+    box-shadow: 0 0 20px 0px rgb(0,0,0.2);
+}
+.facilities{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+}
+.facilities p{
+    color:palevioletred;
+    font-size:14px;
+    font-weight: 300;
+    line-height:22px;
+    padding:10px;
+}
+.facilities-col{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom:30px;
+    position:relative;
+    overflow:hidden;
+}
+.facilities-col img{
+   
+    border-radius: 50px;
+}
+.layer{
+    background:transparent;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    position:absolute;
+    transition: o.5s;
+}
+.layer:hover{
+    background:rgba(231, 134, 179, 0.7);
+}
+.layer h3{
+    width:100%;
+    font-weight: 500;
+    font-size: 26px;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    position:absolute;
+    opacity:0;
+    transition:0.5s;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity:1;
+}
+
+.align{
+    text-align: center;
+
+}
+
+img{
+    border-radius: 50%;
+}
+
+img:hover{
+    box-shadow: 0 0 2px 1px rgba(0,140,186,0.5);
+}
+
+
+
+.container {
+    position: relative;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
+  
+  .image { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+  }
+    </style>
+
+
+
+
+</head>
+<body >
+    <h1 align="center">Gift cards</h1>
+        <div class="facilities-col">
+        <img src="static/images/home-bg.jpg" height="600" width="1000" >
+    <div class="layer">
+        <h3>buy or sell your gift cards</h3>
+    
+    </div>
+    </div>
+        <section class="course">
+        <h1>ABOUT US</h1>
+        <p> A gift card is a form of payment that can be used to make purchases at retail stores, gas stations, 
+            restaurants, and other locations. You load money onto the card, which you or the gift card’s recipient can then 
+            spend at accepted locations. Gift cards can be open-loop or closed-loop.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>MOVIE</h3>
+                <p>The Cinema gift card can be used at hundreds of cinemas that accept eftpos around Australia. 
+                    From major chains to their favourite local cinema, your giftee can treat themselves to movie tickets and 
+                    something from the candy bar, too! Card.Gift helps you give great things like a Cinema gift card to the people you love.</p>
+            </div>
+            <div class="course-col">
+                <h3>GROCERY</h3>
+            
+                <p>Grocery or Store Gift Cards can only be used in one specific store chain. And, most gift cards are redeemable for any 
+                    merchandise in the store, whether it’s liquor, general merchandise or food.</p>
+            </div>
+            <div class="course-col">
+                <h3>ELECTRONICS</h3>
+                <p>Electronic corporate gifts send out a powerful message of the Image of the Company. Some popular options are Fitness Trackers, 
+                    Smart wearables, Wireless earbuds, Power Banks, Tablets, Wireless Speakers, Digital Organizers, Digital Calendars, Mobile
+                     friendly accessories, Digital Cameras, and so many more.</p>
+                
+            
+            </div>
+        </div>
+       </section>
+
+
+       <section class="info">
+        
+<div class="container">
+    <img src="static/images/home-bg.jpg"  width="1000" height="300" class="image">
+    <a href="contact.html">
+    <div class="center">Contact Us For More Information</div>
+</a>
+  </div>
+        
+       </section>
+</body>
+</html>
